@@ -1,7 +1,7 @@
 import AnimatedText from "../../../../components/animatedText";
 import clsx from "clsx";
 import { motion } from "framer-motion";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { ConfigContext } from "../../../../utils/configContext";
 import NeonHexagon from "./svgs/neonHexagon";
 
@@ -10,6 +10,33 @@ function Faq() {
     home: { faq },
   } = useContext(ConfigContext)!;
   const [activeIndex, setActiveIndex] = useState<number>();
+  const [isDarkTheme, setIsDarkTheme] = useState(true);
+
+  useEffect(() => {
+    // Function to check if current theme is dark
+    const checkTheme = () => {
+      const theme = document.documentElement.getAttribute("data-theme");
+      // List of dark themes
+      const darkThemes = ["dark", "synthwave", "halloween", "forest", "black", "luxury", "dracula", "night", "coffee", "dim", "sunset", "business"];
+      setIsDarkTheme(darkThemes.includes(theme || "") || theme === null);
+    };
+
+    // Check theme on mount
+    checkTheme();
+
+    // Listen for theme changes using MutationObserver
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.attributeName === "data-theme") {
+          checkTheme();
+        }
+      });
+    });
+
+    observer.observe(document.documentElement, { attributes: true });
+
+    return () => observer.disconnect();
+  }, []);
 
   if (!faq) return null;
 
@@ -32,7 +59,10 @@ function Faq() {
         <div className="relative flex-1 flex items-center">
           <NeonHexagon />
           <div className="h-full w-full flex items-center justify-center">
-            <h3 className="text-center font-bold text-3xl flex flex-col items-center mb-8 md:mb-0 md:text-left">
+            <h3 className={clsx(
+              "text-center font-bold text-3xl flex flex-col items-center mb-8 md:mb-0 md:text-left",
+              !isDarkTheme && "text-white"
+            )}>
               <AnimatedText text={faq.title} initial={{ y: "0%" }} />
             </h3>
           </div>
@@ -52,10 +82,12 @@ function Faq() {
               }}
               transition={{ delay: 0.25 + index * 0.25 }}
               className={clsx(
-                "border-2 border-primary/30 my-2 collapse collapse-arrow bg-base-100/70 backdrop-blur",
+                "border-2 border-primary/30 my-2 collapse collapse-arrow backdrop-blur",
                 {
                   "collapse-open": activeIndex === index,
-                }
+                },
+                // Use dark background in light theme to contrast with video
+                isDarkTheme ? "bg-base-100/70" : "bg-neutral/80 text-neutral-content"
               )}
             >
               <button
@@ -87,3 +119,4 @@ function Faq() {
 }
 
 export default Faq;
+

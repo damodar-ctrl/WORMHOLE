@@ -9,6 +9,7 @@ import Partners from "./_components/partners";
 import Faq from "./_components/faq";
 import HowItWorks from "./_components/howItWorks";
 import Categories from "./_components/categories";
+import Donation from "./_components/donation";
 
 interface Props {
   config: TemplateConfig;
@@ -25,6 +26,7 @@ function Home({ config }: Props) {
         <HowItWorks />
         <Categories />
         <Faq />
+        <Donation />
         <AppBanner />
         <Footer />
       </main>

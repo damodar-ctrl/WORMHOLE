@@ -98,9 +98,9 @@ function Header() {
                     />
                   </li>
                 )}
-                
+
               </motion.ul>
-              
+
             </div>
           </div>
           <div className="min-h-[300vh] z-[-1]" ref={ref}>

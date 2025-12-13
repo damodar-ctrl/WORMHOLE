@@ -1,12 +1,49 @@
 import AnimatedText from "../../../../components/animatedText";
 import { motion } from "framer-motion";
-import { useContext } from "react";
+import { useContext, useState, useEffect } from "react";
 import { ConfigContext } from "../../../../utils/configContext";
 
 function Categories() {
   const {
     home: { categories },
   } = useContext(ConfigContext)!;
+  const [isDarkTheme, setIsDarkTheme] = useState(true);
+
+  useEffect(() => {
+    // Function to check if current theme is dark
+    const checkTheme = () => {
+      const theme = document.documentElement.getAttribute("data-theme");
+      // List of dark themes
+      const darkThemes = ["dark", "synthwave", "halloween", "forest", "black", "luxury", "dracula", "night", "coffee", "dim", "sunset", "business"];
+      setIsDarkTheme(darkThemes.includes(theme || "") || theme === null);
+    };
+
+    // Check theme on mount
+    checkTheme();
+
+    // Listen for theme changes using MutationObserver
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.attributeName === "data-theme") {
+          checkTheme();
+        }
+      });
+    });
+
+    observer.observe(document.documentElement, { attributes: true });
+
+    return () => observer.disconnect();
+  }, []);
+
+  // Function to get the correct image for a card
+  const getCardIcon = (icon: string) => {
+    // Check if this is the comingsoon image and we're in light theme
+    if (icon.includes("comingsoon.svg") && !isDarkTheme) {
+      return "/section3deliver/comingsoon blackcolor.svg";
+    }
+    return icon;
+  };
+
   if (!categories) return null;
 
   return (
@@ -59,7 +96,7 @@ function Categories() {
             <div className="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-gradient-to-br from-primary/15 to-secondary/15" />
             <div className="card-body items-center text-center">
               <div className="w-44 h-44 sm:w-48 sm:h-48 md:w-52 md:h-52 rounded-2xl overflow-hidden mb-4">
-                <img src={card.icon} alt="category" className="w-full h-full object-cover" />
+                <img src={getCardIcon(card.icon)} alt="category" className="w-full h-full object-cover" />
               </div>
               <h3 className="card-title text-2xl font-bold">{card.title}</h3>
               <p className="opacity-80 text-sm">{card.subtitle}</p>
@@ -72,3 +109,4 @@ function Categories() {
 }
 
 export default Categories;
+

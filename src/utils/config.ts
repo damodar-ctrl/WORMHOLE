@@ -214,6 +214,14 @@ const templateConfig: TemplateConfig = {
         },
       ],
     },
+    donation: {
+      id: "support-us",
+      title: "Fuel Our Mission",
+      subtitle: "Help Us Bring Fresh Produce to Every Home in Kurnool",
+      description: "Your generous contribution powers our vision of making farm-fresh vegetables accessible to all. Every donation helps us expand our reach, support local farmers, and deliver quality produce to more families. Together, we're building a healthier community—one delivery at a time.",
+      buttonText: "Make a Donation",
+      paymentUrl: "https://razorpay.me/@wormhole2285",
+    },
     header: {
       headline: "Fresh Veggies & Tasty Snacks—At Your Door in Minutes",
       subtitle:

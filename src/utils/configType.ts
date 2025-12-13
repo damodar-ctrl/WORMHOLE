@@ -171,5 +171,13 @@ export type TemplateConfig = {
                 rows: string[];
             }[] | undefined;
         } | undefined;
+        donation?: {
+            id?: string | undefined;
+            title: string;
+            subtitle: string;
+            description: string;
+            buttonText: string;
+            paymentUrl: string;
+        } | undefined;
     };
 }
