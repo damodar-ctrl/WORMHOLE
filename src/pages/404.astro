@@ -1,0 +1,77 @@
+---
+import Layout from "Layout.astro";
+import defaultTemplateConfig from "utils/config";
+---
+
+<Layout
+  {...defaultTemplateConfig}
+  seo={{
+    title: "Page Not Found",
+    description: "The page you are looking for does not exist.",
+  }}
+>
+  <main class="min-h-screen flex items-center justify-center px-6 py-16">
+    <section class="card max-w-3xl w-full bg-base-100 shadow-xl border border-base-200">
+      <div class="card-body gap-8 items-center text-center">
+        <div class="w-full flex justify-center">
+          <svg
+            class="max-w-md w-full h-auto"
+            viewBox="0 0 400 240"
+            role="img"
+            aria-labelledby="notFoundTitle notFoundDesc"
+          >
+            <title id="notFoundTitle">404 - Page Not Found</title>
+            <desc id="notFoundDesc">
+              Illustration showing the page could not be found.
+            </desc>
+            <defs>
+              <linearGradient id="nf-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="oklch(var(--p))" stop-opacity="0.9" />
+                <stop offset="100%" stop-color="oklch(var(--s))" stop-opacity="0.9" />
+              </linearGradient>
+            </defs>
+            <rect width="400" height="240" rx="24" fill="url(#nf-grad)" />
+            <g fill="oklch(var(--b1))" opacity="0.12">
+              <circle cx="70" cy="70" r="24" />
+              <circle cx="330" cy="60" r="28" />
+              <circle cx="200" cy="180" r="36" />
+            </g>
+            <text
+              x="50%"
+              y="48%"
+              text-anchor="middle"
+              fill="white"
+              font-size="68"
+              font-weight="700"
+              font-family="Rowdies, system-ui, -apple-system, sans-serif"
+            >
+              404
+            </text>
+            <text
+              x="50%"
+              y="65%"
+              text-anchor="middle"
+              fill="white"
+              font-size="18"
+              font-weight="500"
+              font-family="Inter, system-ui, -apple-system, sans-serif"
+            >
+              Oops! The page you’re looking for isn’t here.
+            </text>
+          </svg>
+        </div>
+        <div class="space-y-3">
+          <h1 class="text-3xl md:text-4xl font-bold">Page not found</h1>
+          <p class="text-base-content/70 max-w-xl">
+            The page you requested couldn’t be located. It might have been moved,
+            deleted, or the link could be incorrect.
+          </p>
+        </div>
+        <div class="card-actions justify-center">
+          <a class="btn btn-primary" href="/">Back to home</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+

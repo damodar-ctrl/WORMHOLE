@@ -1,0 +1,133 @@
+Privacy Policy
+Last Updated: 07 December 2025
+Introduction
+This Privacy Policy applies to Wormhole (“Company”, “we”, “us”, or “our”), an India-based
+technology platform that operates the mobile application Wormhole (“App”) and the website
+https://wormhole.co.in (collectively, the “Platform”).
+We value your privacy and are committed to protecting the personal information shared with
+us. This Privacy Policy explains how we collect, use, store, disclose, and protect your
+information when you use our Platform.
+By downloading, installing, registering, or using the Platform, you agree to the collection and
+use of information in accordance with this Privacy Policy. If you do not agree, please do not
+use the Platform.
+1. Applicability
+This Privacy Policy applies to all users of the Platform. It should be read together with our
+Terms of Use.
+2. Information We Collect
+2.1 Personal Information
+We may collect the following personal information when you register or use the Platform:
+Full name
+Mobile number
+Email address
+Delivery address(es)
+2.2 Sensitive Personal Information
+We do not store sensitive financial details such as debit card, credit card, or UPI
+information. Payments are processed securely through third-party payment gateways, and
+we do not have access to your complete payment credentials.
+2.3 Transactional Information
+When you place orders through the Platform, we may collect:
+Order details and order history
+Product information
+Payment status (success/failure)
+2.4 Location Information
+To enable order delivery services, we may collect:
+Approximate or precise location (with your permission)
+IP address
+Location data is collected only when required for delivery-related services. You may disable
+location access via your device settings, though certain features may not function properly.
+2.5 Technical & Device Information
+We may automatically collect:
+Device type, model, and operating system
+App version
+Unique device identifiers
+Log data and crash reports
+2.6 Device Permissions
+To provide specific features, we may request access to:
+Notifications: To send you order updates and OTPs.
+Location: To facilitate accurate delivery addresses.
+3. Use of Firebase & Google Services
+Our Platform uses Google Firebase services, including but not limited to:
+Firebase Authentication: For secure user login & verification.
+Firebase Firestore: For secure cloud data storage.
+Firebase Cloud Messaging (FCM): To deliver push notifications.
+Firebase Analytics: To monitor app performance and usage patterns.
+Data processed through Firebase may be stored on Google’s secure servers, including
+servers located outside India, in accordance with Google’s privacy and security standards.
+4. How We Use Your Information
+We use collected information to:
+Create and manage user accounts.
+Process and fulfill orders.
+Assign orders to delivery partners.
+Verify identity via OTP and notifications.
+Send transactional notifications (order updates, delivery status).
+Improve app performance and user experience.
+Ensure platform security and prevent fraud.
+Comply with legal obligations.
+5. Communication
+We may contact you via:
+SMS or WhatsApp (for OTPs and critical order updates).
+Push notifications.
+Email.
+You can control notification permissions anytime via your device settings.
+6. Information Sharing & Disclosure
+We do not sell your personal data. We may share limited information with:
+6.1 Delivery Partners
+Name, phone number, and delivery address (strictly for order fulfilment purposes).
+6.2 Service Providers
+Payment gateways (for processing payments).
+Cloud infrastructure & analytics providers (e.g., Google Firebase).
+6.3 Legal & Regulatory Authorities
+When required to comply with applicable laws, legal processes, or lawful government
+requests.
+7. Data Storage & Retention
+Your information is stored securely and retained only as long as necessary to:
+Provide our services.
+Meet legal, regulatory, or compliance requirements.
+8. Account Deletion & User Rights
+You have full control over your data. You have the right to:
+1. Access & Update: You can view and update your profile information within the App.
+2. Request Deletion: You may request the deletion of your account and associated data at
+any time. You can do this by:
+Navigating to the "Delete Account" option within the App settings.
+Visiting our website at 
+https://wormhole.co.in/support (or contacting us via email).
+3. Withdraw Consent: You may withdraw consent for location or notification permissions
+via your device settings.
+Note on Deletion: When you request account deletion, we will remove your personal data
+from our active databases. However, we may retain certain transactional data (such as order
+history) for a limited period solely to comply with legal and tax obligations.
+9. Security Measures
+We use reasonable technical and organisational safeguards to protect your data, including
+encryption and secure access controls via Firebase Security Rules. However, no method of
+electronic transmission or storage is 100% secure, and we cannot guarantee absolute
+security.
+10. Cookies & Tracking Technologies
+Our website and app may use cookies and similar technologies to improve functionality,
+analytics, and user experience. You may manage cookie settings through your browser.
+11. Links to Third-Party Sites
+The Platform may contain links to third-party websites or services. We are not responsible
+for the privacy practices or content of those third parties.
+12. Children’s Privacy
+Our Platform is not intended for users under 18 years of age. We do not knowingly collect
+information from minors.
+13. Updates to This Privacy Policy
+We may update this Privacy Policy from time to time. Changes will be posted on the Platform
+with an updated “Last Updated” date. Continued use of the Platform indicates acceptance of
+the revised policy.
+14. Governing Law
+This Privacy Policy is governed by and construed in accordance with the laws of India.
+Courts in Kurnool, Andhra Pradesh shall have exclusive jurisdiction.
+15. Contact Us
+If you have any questions, concerns, or requests regarding this Privacy Policy or your data,
+please contact us:
+Company Name: WORMHOLE
+Email: 
+support@wormhole.co.in
+Website: 
+https://wormhole.co.in
+Registered Address:
+87/1103-F-1-A, Revenue Ward No 87,
+4th Class Employees Colony,
+Kurnool, Andhra Pradesh 518003
+India
+© 2025 Wormhole. All rights reserved.

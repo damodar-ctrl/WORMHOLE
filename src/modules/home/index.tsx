@@ -1,0 +1,35 @@
+import Navbar from "../../components/navbar";
+import Footer from "../../components/footer";
+import AppBanner from "../../components/appBanner";
+import { ConfigContext } from "../../utils/configContext";
+import type { TemplateConfig } from "../../utils/configType";
+import Header from "./_components/header";
+import Features from "./_components/features";
+import Partners from "./_components/partners";
+import Faq from "./_components/faq";
+import HowItWorks from "./_components/howItWorks";
+import Categories from "./_components/categories";
+
+interface Props {
+  config: TemplateConfig;
+}
+
+function Home({ config }: Props) {
+  return (
+    <ConfigContext.Provider value={config}>
+      <main>
+        <Navbar />
+        <Header />
+        <Partners />
+        <Features />
+        <HowItWorks />
+        <Categories />
+        <Faq />
+        <AppBanner />
+        <Footer />
+      </main>
+    </ConfigContext.Provider>
+  );
+}
+
+export default Home;
