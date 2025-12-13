@@ -8,6 +8,7 @@ import Features from "./_components/features";
 import Partners from "./_components/partners";
 import Faq from "./_components/faq";
 import HowItWorks from "./_components/howItWorks";
+import About from "./_components/about";
 import Categories from "./_components/categories";
 import Donation from "./_components/donation";
 
@@ -24,6 +25,7 @@ function Home({ config }: Props) {
         <Partners />
         <Features />
         <HowItWorks />
+        <About />
         <Categories />
         <Faq />
         <Donation />
